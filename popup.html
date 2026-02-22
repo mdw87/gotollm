@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoToLLM</title>
-    <link rel="stylesheet" href="popup.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Header -->
-      <header>
-        <img src="icons/icon48.png" alt="GoToLLM" class="logo" />
-        <div class="title-group">
-          <h1>GoToLLM</h1>
-          <span class="tagline">Address bar → AI, instantly</span>
-        </div>
-      </header>
 
-      <!-- How to use -->
-      <section class="how-to">
-        <div class="step">
-          <span class="badge">1</span>
-          <span>Type <kbd>ai</kbd> in the address bar</span>
-        </div>
-        <div class="step">
-          <span class="badge">2</span>
-          <span>Press <kbd>Tab</kbd></span>
-        </div>
-        <div class="step">
-          <span class="badge">3</span>
-          <span>Type your prompt &amp; press <kbd>Enter</kbd></span>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoToLLM</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
 
-      <!-- Default LLM setting -->
-      <section class="settings">
-        <label for="defaultLLM">Default LLM</label>
-        <select id="defaultLLM">
-          <option value="chatgpt">ChatGPT</option>
-          <option value="claude">Claude</option>
-          <option value="gemini">Gemini</option>
-          <option value="perplexity">Perplexity</option>
-          <option value="grok">Grok</option>
-        </select>
-        <span class="saved-msg" id="savedMsg">Saved ✓</span>
-      </section>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <img src="icons/icon48.png" alt="GoToLLM" class="logo" />
+      <div class="title-group">
+        <h1>GoToLLM&#8482;</h1>
+        <span class="tagline">Address bar → AI, instantly</span>
+      </div>
+    </header>
 
-      <!-- Override tip -->
-      <section class="overrides">
-        <p class="label">Override anytime with a prefix:</p>
-        <div class="chips">
-          <span class="chip">claude: <em>prompt</em></span>
-          <span class="chip">chatgpt: <em>prompt</em></span>
-          <span class="chip">gemini: <em>prompt</em></span>
-          <span class="chip">perplexity: <em>prompt</em></span>
-          <span class="chip">grok: <em>prompt</em></span>
-        </div>
-      </section>
-    </div>
-    <script src="popup.js"></script>
-  </body>
+    <!-- How to use -->
+    <section class="how-to">
+      <div class="step">
+        <span class="badge">1</span>
+        <span>Type <kbd>ai</kbd> in the address bar</span>
+      </div>
+      <div class="step">
+        <span class="badge">2</span>
+        <span>Press <kbd>Tab</kbd></span>
+      </div>
+      <div class="step">
+        <span class="badge">3</span>
+        <span>Type your prompt &amp; press <kbd>Enter</kbd></span>
+      </div>
+    </section>
+
+    <!-- Default LLM setting -->
+    <section class="settings">
+      <label for="defaultLLM">Default LLM</label>
+      <select id="defaultLLM">
+        <option value="chatgpt">ChatGPT</option>
+        <option value="claude">Claude</option>
+        <option value="gemini">Gemini</option>
+        <option value="perplexity">Perplexity</option>
+        <option value="grok">Grok</option>
+      </select>
+      <span class="saved-msg" id="savedMsg">Saved ✓</span>
+    </section>
+
+    <!-- Override tip -->
+    <section class="overrides">
+      <p class="label">Override anytime with a prefix:</p>
+      <div class="chips">
+        <span class="chip">claude: <em>prompt</em></span>
+        <span class="chip">chatgpt: <em>prompt</em></span>
+        <span class="chip">gemini: <em>prompt</em></span>
+        <span class="chip">perplexity: <em>prompt</em></span>
+        <span class="chip">grok: <em>prompt</em></span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>&copy; 2026 Mike Willard</span>
+      <a href="https://github.com/mdw87/gotollm" target="_blank" class="gh-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+        </svg>
+        GitHub
+      </a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
 </html>
